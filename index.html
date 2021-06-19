@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/style-icon-trip.css" />
+    <script src="./assets/js/script.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Tourisme à Paris 2021 : Visiter Paris - Tripadvisor</title>
   </head>
   <body>
@@ -29,7 +32,7 @@
             id="search"
             name="search-bar"
             size="auto"
-            placeholder=""
+            placeholder="🔍"
           />
           <nav>
             <div>
@@ -44,8 +47,25 @@
               <i class="icon-notification_bell"></i>
               <span>Alertes</span>
             </div>
-            <button>Connectez-vous</button>
+            <button id="contact">Contactez-nous</button>
           </nav>
+        </div>
+      </div>
+      <div id="modale" class="modale hidden">
+        <div>
+          <div><button id="cross">x</button></div>
+          <h1>Formulaire de contact</h1>
+          <form id="contact-form" class="contact-form container-form">
+            <input type="text" id="firstname" placeholder="Prénom" />
+            <input type="text" id="lastname" placeholder="Nom" />
+            <input type="email" id="email" placeholder="Email" />
+            <input type="text" id="subject" placeholder="Sujet" />
+            <textarea
+              id="message"
+              placeholder="Taper votre text ici"
+            ></textarea>
+            <input type="submit" value="Envoyer le message" />
+          </form>
         </div>
       </div>
     </header>

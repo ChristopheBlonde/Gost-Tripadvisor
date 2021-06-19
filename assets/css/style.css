@@ -134,6 +134,9 @@ header nav {
   border-radius: 10px;
   border: solid 2px rgb(204, 204, 204);
   margin-right: 30px;
+  outline: none;
+  font-size: 18px;
+  font-family: var(--Trip-Sans-Med);
 }
 
 header nav div {
@@ -174,6 +177,87 @@ button:hover,
 .img-left button:hover {
   background-color: #333333;
   cursor: pointer;
+}
+
+/* Modale */
+
+.modale {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modale h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+
+.container-form {
+  max-width: 400px;
+  margin: 0 auto 10px auto;
+}
+
+.modale > div {
+  width: 40vw;
+  height: 90vh;
+  background-color: white;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+.modale div div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.modale button {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  text-align: center;
+  width: 4px;
+  color: black;
+  background-color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modale input,
+textarea {
+  font-family: var(--Trip-Sans-Med);
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea {
+  min-height: 200px;
+  font-family: var(--Trip-Sans-Med);
+  margin-bottom: 35px;
+}
+
+input[type="submit"] {
+  background-color: salmon;
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 20px 0;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(238, 111, 97);
+}
+
+.hidden {
+  display: none;
 }
 
 /* Main */
@@ -594,8 +678,7 @@ main nav {
   font-family: var(--Trip-Sans-Med);
 }
 .trending {
-  width: 100%;
-  /* min-width: 1024px; */
+  min-width: 1024px;
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
@@ -701,8 +784,6 @@ footer img {
 }
 
 @media (max-width: 1024px) {
-  /* Body */
-
   /* Header */
 
   header nav div span {
@@ -770,11 +851,6 @@ footer img {
     height: 290px;
     object-fit: cover;
   }
-  /* Trending in forums */
-  .trending {
-    min-width: 1024px;
-    height: 100%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -782,7 +858,7 @@ footer img {
 
   h1 {
     font-size: 32px;
-    /* margin-left: 20px; */
+    margin-left: 20px;
   }
 
   /* Header */
