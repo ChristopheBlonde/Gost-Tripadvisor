@@ -20,7 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
         subject: document.querySelector("#subject").value,
         message: document.querySelector("#message").value,
       };
-      const response = await axios.post("http://localhost:3000/contact", data);
+      const response = await axios.post(
+        "https://brave-meninsky-9a1577.netlify.app/",
+        data
+      );
       document.querySelector("#modale").classList.add("hidden");
       if (response.status === 200) {
         alert("Le message a bien été envoyé");
