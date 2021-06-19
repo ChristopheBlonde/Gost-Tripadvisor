@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.querySelector("#message").value,
       };
       const response = await axios.post(
-        "https://brave-meninsky-9a1577.netlify.app/",
+        "https://tripadvisor-ghost.herokuapp.com/contact",
         data
       );
       document.querySelector("#modale").classList.add("hidden");
