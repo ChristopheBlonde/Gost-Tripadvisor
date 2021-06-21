@@ -31,4 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Oups il y a eu un problème le message n'est pas parti");
       }
     });
+  document.querySelector("#openModal").addEventListener("click", () => {
+    document.querySelector("#modale").classList.remove("hidden");
+  });
 });

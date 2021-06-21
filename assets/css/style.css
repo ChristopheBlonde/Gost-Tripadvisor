@@ -681,6 +681,7 @@ main nav {
 }
 .trending {
   display: flex;
+  overflow: hidden;
 }
 
 .trending > div {
@@ -844,9 +845,12 @@ footer img {
   }
 
   .trending {
-    white-space: nowrap;
     overflow: hidden;
     overflow-x: scroll;
+  }
+
+  .trending > div {
+    min-width: calc(1024px / 3 - 30px / 3);
   }
 }
 
@@ -885,6 +889,13 @@ footer img {
   .icon i {
     font-size: 24px;
     display: flex;
+  }
+
+  /* Modale */
+
+  .modale > div {
+    width: 85vw;
+    margin: auto;
   }
 
   /* Main Nav */
